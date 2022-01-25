@@ -122,7 +122,16 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = [
+    BASE_DIR / 'static' 
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#bot settings
+
+TG_TOKEN = '5295506261:AAE5b_6LTFg656eGBRKg6VdgvthdDcYbeIo'
+

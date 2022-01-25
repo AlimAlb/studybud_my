@@ -8,8 +8,8 @@ urlpatterns = [
     path('register/', views.registerPage, name = 'register'),
     path('', views.home, name='home'),
     path('room/<str:pk>/', views.room, name= 'room'),
-    path('create-room/', views.createRoom, name = 'create-room'),
-    path('update-room/<str:pk>/', views.updateRoom, name='update-room'),
-    path('delete-room/<str:pk>/', views.deleteRoom, name='delete-room')
+    path('profile/<str:pk>/', views.userProfile, name='user-profile'),
+    path('add_stock/<str:pk>/', views.add_stock, name = 'stock-add'),
+    path('delete_stock/<str:pk>/', views.delete_stock, name = 'stock-delete')
 
 ]
